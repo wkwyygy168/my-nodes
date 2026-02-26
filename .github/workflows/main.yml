@@ -1,29 +1,34 @@
 name: Update Nodes
 on:
-  workflow_dispatch:
+  workflow_dispatch: # 支持手动点火
   schedule:
-    - cron: '0 */6 * * *'
+    # 北京时间每天 07:00 运行 (对应 UTC 23:00)
+    - cron: '0 23 * * *' 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # 必须赋予写入权限
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
+
       - name: Install dependencies
-        run: pip install requests pyyaml
-      - name: Run script
+        run: pip install requests pyyaml # 必须安装 pyyaml 否则脚本报错
+
+      - name: Run core script
         run: python main.py
-      - name: Commit and Push
+
+      - name: Sync to Repo
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          # 核心修正：使用 git add . 确保 yaml 和 txt 同时被抓取
-          git add .
-          git commit -m "Final Update: $(date)" --allow-empty
+          # 关键动作：添加当前目录下所有生成的文件（nodes.txt 和 nodes.yaml）
+          git add . 
+          git commit -m "Nodes dynamic update: $(date)" --allow-empty
           git push origin main --force
