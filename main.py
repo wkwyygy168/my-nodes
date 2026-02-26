@@ -4,14 +4,28 @@ import yaml
 import re
 
 def universal_mirror_factory():
-    # 1. 扩充的优质源列表 (包含 2026 最新活跃源)
+    # 修正后的优质去重源列表 (2026 实时更新)
     sources = [
+        # --- 基础源 ---
         "https://raw.githubusercontent.com/free18/v2ray/main/v.txt",
         "https://raw.githubusercontent.com/free18/v2ray/main/c.yaml",
         "https://raw.githubusercontent.com/zipvpn/FreeVPNNodes/main/free_v2ray_xray_nodes.txt",
         "https://raw.githubusercontent.com/zipvpn/FreeVPNNodes/main/free_clash_nodes.yaml",
         "https://raw.githubusercontent.com/Flikify/Free-Node/main/v2ray.txt",
-        "https://raw.githubusercontent.com/Flikify/Free-Node/main/clash.yaml"
+        "https://raw.githubusercontent.com/Flikify/Free-Node/main/clash.yaml",
+        
+        # --- 聚合大池子 (节点量极多) ---
+        "https://raw.githubusercontent.com/wzdnzd/aggregator/main/subscribe/proxy.txt",
+        "https://raw.githubusercontent.com/v820965095/E-V2ray-Singbox-Clash/main/V2ray_all",
+        "https://raw.githubusercontent.com/mianfeifq/share/main/data2025.txt",
+        
+        # --- 精选/测速源 ---
+        "https://raw.githubusercontent.com/yebige/FreeNode/main/node.txt",
+        "https://raw.githubusercontent.com/Pawpieee/Free-Nodes/main/node.txt",
+        
+        # --- 高级协议源 (Hysteria2 / Reality) ---
+        "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml",
+        "https://raw.githubusercontent.com/tugezhe/v2ray/main/v2ray.txt"
     ]
     
     yaml_nodes = []
