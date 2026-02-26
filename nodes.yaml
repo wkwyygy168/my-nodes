@@ -2004,70 +2004,67 @@ proxies:
     headers:
       Host: tr1-smart.adelping.com.
     path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
-- alterId: 0
-  cipher: auto
-  name: CDN-zipvpn.net-020
-  network: ws
-  port: 80
-  server: 104.21.7.101
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  ws-opts:
-    headers:
-      Host: gbnh.0nn.ccwu.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  name: CDN-zipvpn.net-040
-  network: ws
-  port: 80
-  server: 104.21.16.211
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
-  ws-opts:
-    headers:
-      Host: nnmkl.2nn.ccwu.cc
-    path: /
-- name: CDN-zipvpn.net-048
+- name: CDN-zipvpn.net-011
   network: ws
   password: humanity
   port: 443
-  server: www.creationlong.org
+  server: www.calmlunch.com
   skip-cert-verify: false
-  sni: www.creationlong.org
   type: trojan
   ws-opts:
-    headers:
-      Host: www.creationlong.org
     path: /assignment
-- alterId: 0
-  cipher: auto
-  name: CDN-zipvpn.net-050
+- name: CH-zipvpn.net-014
   network: ws
+  password: humanity
   port: 443
-  server: 162.159.152.4
-  servername: v2ray.codefyinc.com
+  server: 185.18.250.252
   skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-  ws-opts:
-    headers:
-      Host: v2ray.codefyinc.com
-    path: /vmessws
-- name: CDN-zipvpn.net-051
-  network: ws
-  password: T9BpZIVMNv
-  port: 8443
-  server: sweden.vmaxpanel.com
-  skip-cert-verify: false
-  sni: sweden.vmaxpanel.com
+  sni: www.calmlunch.com
   type: trojan
   ws-opts:
     headers:
-      Host: sweden.vmaxpanel.com
-    path: /amd
+      Host: www.calmlunch.com
+    path: /assignment
+- name: ES-zipvpn.net-015
+  network: ws
+  password: trojan
+  port: 8443
+  server: 109.234.211.66
+  skip-cert-verify: false
+  sni: store.timimi.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: store.timimi.dpdns.org
+    path: /
+- name: CH-zipvpn.net-017
+  network: ws
+  password: humanity
+  port: 443
+  server: 185.18.250.245
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: CDN-zipvpn.net-050
+  network: ws
+  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+  port: 443
+  server: chatgpt.com
+  skip-cert-verify: false
+  sni: mfyousheng.nl.eu.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: mfyousheng.nl.eu.org
+    path: /tjwsLhx0SFASG4l9FERJ1g
+- name: JP-zipvpn.net-057
+  password: 347ca311-8fc2-499c-8fe1-bd0ecb50f1b3
+  port: 43074
+  server: 5.34.222.4
+  skip-cert-verify: false
+  sni: iepl.jpz2.cat.bilibili.com
+  type: trojan
