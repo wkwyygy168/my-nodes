@@ -4,14 +4,29 @@ import yaml
 import re
 
 def universal_mirror_factory():
-    # 你的核心源列表
+    # 整理后的优质源列表 (已去重、修正语法、分类)
     sources = [
+        # --- 综合高频更新源 ---
+        "https://raw.githubusercontent.com/v820965095/E-V2ray-Singbox-Clash/main/V2ray_all",
+        "https://raw.githubusercontent.com/tugezhe/v2ray/main/v2ray.txt",
+        "https://raw.githubusercontent.com/wzdnzd/aggregator/main/subscribe/proxy.txt",
+        "https://raw.githubusercontent.com/mianfeifq/share/main/data2025.txt",
+        
+        # --- free18 系列 ---
         "https://raw.githubusercontent.com/free18/v2ray/main/v.txt",
         "https://raw.githubusercontent.com/free18/v2ray/main/c.yaml",
+        
+        # --- zipvpn 系列 ---
         "https://raw.githubusercontent.com/zipvpn/FreeVPNNodes/main/free_v2ray_xray_nodes.txt",
         "https://raw.githubusercontent.com/zipvpn/FreeVPNNodes/main/free_clash_nodes.yaml",
+        
+        # --- Flikify 系列 ---
         "https://raw.githubusercontent.com/Flikify/Free-Node/main/v2ray.txt",
-        "https://raw.githubusercontent.com/Flikify/Free-Node/main/clash.yaml"
+        "https://raw.githubusercontent.com/Flikify/Free-Node/main/clash.yaml",
+        
+        # --- 其他稳定源 ---
+        "https://raw.githubusercontent.com/Pawpieee/Free-Nodes/main/node.txt",
+        "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml"
     ]
     
     yaml_nodes = []
