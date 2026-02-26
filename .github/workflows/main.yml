@@ -1,16 +1,17 @@
 name: Update Nodes
-
 on:
   workflow_dispatch:
   schedule:
     - cron: '0 */6 * * *'
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -18,17 +19,18 @@ jobs:
           python-version: '3.9'
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests pyyaml
+        run: pip install requests pyyaml
 
       - name: Run script
         run: python main.py
 
-      - name: Commit and Push
+      - name: Push results
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add nodes.txt nodes.yaml
-          git commit -m "自动更新: $(date +'%Y-%m-%d %H:%M:%S')" --allow-empty || exit 0
-          git push
+          # 强制创建一个 nodes.txt，防止文件丢失
+          touch nodes.txt
+          git add nodes.txt
+          # 只要脚本跑了，就强制生成一个带时间戳的新版本，绝对不会报错 nothing to commit
+          git commit -m "Auto Refresh: $(date)" --allow-empty
+          git push origin main --force
