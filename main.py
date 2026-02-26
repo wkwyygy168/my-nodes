@@ -1,49 +1,75 @@
 import requests
 import base64
-import time
+import yaml
+import re
 
 def universal_mirror_factory():
-    # 2026 顶级生存率源：只留最硬的，不注水
+    # 1. 扩充的优质源列表 (包含 2026 最新活跃源)
     sources = [
-        "https://raw.githubusercontent.com/v820965095/E-V2ray-Singbox-Clash/main/V2ray_all",
-        "https://raw.githubusercontent.com/tugezhe/v2ray/main/v2ray.txt",
-        "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml",
-        "https://raw.githubusercontent.com/Pawpieee/Free-Nodes/main/node.txt"
+        "https://raw.githubusercontent.com/free18/v2ray/main/v.txt",
+        "https://raw.githubusercontent.com/free18/v2ray/main/c.yaml",
+        "https://raw.githubusercontent.com/zipvpn/FreeVPNNodes/main/free_v2ray_xray_nodes.txt",
+        "https://raw.githubusercontent.com/zipvpn/FreeVPNNodes/main/free_clash_nodes.yaml",
+        "https://raw.githubusercontent.com/Flikify/Free-Node/main/v2ray.txt",
+        "https://raw.githubusercontent.com/Flikify/Free-Node/main/clash.yaml"
     ]
     
-    nodes_list = []
-    print("🚀 正在执行第 50 次迭代优化：深度抓取中...")
+    yaml_nodes = []
+    txt_nodes = []
+    seen_fingerprints = set() # 用于去重
 
     for url in sources:
         try:
-            # 加入随机时间戳防止 GitHub 缓存死节点
-            r = requests.get(f"{url}?t={int(time.time())}", timeout=20)
-            if r.status_code == 200:
-                raw_text = r.text
-                # 自动识别 Base64 并解码
-                if "://" not in raw_text[:50]:
-                    try:
-                        raw_text = base64.b64decode(raw_text).decode('utf-8', errors='ignore')
-                    except: pass
+            print(f"🚀 正在抓取: {url}")
+            res = requests.get(url, timeout=15)
+            content = res.text
+            
+            if url.endswith(".yaml") or "clash" in url:
+                # --- Clash YAML 处理 & 去重 ---
+                try:
+                    data = yaml.safe_load(content)
+                    if data and 'proxies' in data:
+                        for node in data['proxies']:
+                            # 指纹 = 服务器地址 + 端口 (唯一标识)
+                            fp = f"{node.get('server')}:{node.get('port')}"
+                            if fp not in seen_fingerprints:
+                                seen_fingerprints.add(fp)
+                                yaml_nodes.append(node)
+                except: continue
+            else:
+                # --- TXT (Base64/明文) 处理 & 去重 ---
+                # 尝试Base64解密
+                try:
+                    decoded = base64.b64decode(content + "=" * (-len(content) % 4)).decode('utf-8', errors='ignore')
+                    raw_links = decoded if "://" in decoded else content
+                except:
+                    raw_links = content
                 
-                # 提取并初步去重
-                lines = [l.strip() for l in raw_text.splitlines() if "://" in l and len(l) > 20]
-                nodes_list.extend(lines)
-                print(f"✅ 源 {url} 抓取成功，贡献 {len(lines)} 个节点")
-        except:
-            continue
+                for line in raw_links.splitlines():
+                    if "://" in line:
+                        # 简单正则提取地址端口去重 (针对 vmess/ss/ssr)
+                        match = re.search(r'@?([^:/]+):(\d+)', line)
+                        if match:
+                            fp = match.group(0)
+                            if fp not in seen_fingerprints:
+                                seen_fingerprints.add(fp)
+                                txt_nodes.append(line)
+                        else:
+                            txt_nodes.append(line)
 
-    # 深度排重
-    final_nodes = list(set(nodes_list))
+        except Exception as e:
+            print(f"❌ 抓取失败 {url}: {e}")
+
+    # 3. 输出文件
+    # 保存为 Clash 格式
+    with open("nodes.yaml", "w", encoding="utf-8") as f:
+        yaml.dump({"proxies": yaml_nodes}, f, allow_unicode=True)
     
-    # 强制生成 Base64 结果
-    content = "\n".join(final_nodes)
-    encoded = base64.b64encode(content.encode('utf-8')).decode('utf-8')
-
+    # 保存为 TXT 格式
     with open("nodes.txt", "w", encoding="utf-8") as f:
-        f.write(encoded)
-    
-    print(f"🏁 第 50 代脚本运行完毕！共保存 {len(final_nodes)} 个活跃节点。")
+        f.write("\n".join(txt_nodes))
+        
+    print(f"✨ 处理完成！去重后剩余 {len(seen_fingerprints)} 个唯一节点。")
 
 if __name__ == "__main__":
     universal_mirror_factory()
