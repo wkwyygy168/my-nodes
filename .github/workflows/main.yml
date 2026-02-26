@@ -6,31 +6,24 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          persist-credentials: true
-          fetch-depth: 0
-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-
       - name: Install dependencies
         run: pip install requests pyyaml
-
       - name: Run script
         run: python main.py
-
-      - name: Push results
+      - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          # 强制创建一个 nodes.txt，防止文件丢失
-          touch nodes.txt
-          git add nodes.txt
-          # 只要脚本跑了，就强制生成一个带时间戳的新版本，绝对不会报错 nothing to commit
-          git commit -m "Auto Refresh: $(date)" --allow-empty
+          # 核心修正：使用 git add . 确保 yaml 和 txt 同时被抓取
+          git add .
+          git commit -m "Final Update: $(date)" --allow-empty
           git push origin main --force
