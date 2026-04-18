@@ -1,441 +1,138 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 每天更新，请加电报群防止失联
-  port: 443
-  reality-opts:
-    public-key: OTIsytv0GBliKgroJmH9rUPkJyE-nIIj2OFc2V5eyCI
-    short-id: c0222607e695
-  server: www2.mintydavia.click
-  servername: www.microsoft.com
+- name: 每天更新，请加电报群防止失联
+  password: BxceQaOe
+  port: 25675
+  server: 43.199.31.240
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
   tls: true
-  type: vless
-  uuid: 626bf2f0-f199-4945-b7e6-ecc1975230c1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 电报群：https://t.me/vvkj11
+  type: trojan
+- name: 电报群：https://t.me/vvkj11
+  password: BxceQaOe
+  port: 11097
+  server: 16.163.106.216
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+- name: 日期：04-18
+  password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
+  port: 24534
+  server: jp2-8sb.6121999.dpdns.org
+  skip-cert-verify: false
+  sni: jp2-8sb.6121999.dpdns.org
+  tls: true
+  type: trojan
+- name: 免费VPN：https://tt.vg/OWeaF
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: false
+  sni: epge.muarua.filegear-sg.me
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epge.muarua.filegear-sg.me
+    path: /?ed
+- name: 美国
+  password: trojan
+  port: 8888
+  server: 152.53.45.251
+  skip-cert-verify: false
+  sni: jflsjlaf.pages.dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
+- name: 西班牙
+  password: trojan
+  port: 2087
+  server: 109.234.211.66
+  skip-cert-verify: false
+  sni: store.timimi.dpdns.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: store.timimi.dpdns.org
+    path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+- name: 美国_1
+  password: trojan
+  port: 8444
+  server: 152.53.200.98
+  skip-cert-verify: false
+  sni: jflsjlaf.pages.dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
+- name: 美国_2
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  port: 443
+  server: blackshadow.dpdns.org
+  skip-cert-verify: false
+  sni: blackshadow.dpdns.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: blackshadow.dpdns.org
+    path: /195.123.218.174-443
+- name: 美国_5
+  password: trojan
   port: 8443
+  server: 109.234.211.66
+  skip-cert-verify: false
+  sni: store.timimi.dpdns.org
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: store.timimi.dpdns.org
+    path: /
+- name: 美国_6
+  password: trojan
+  port: 8444
+  server: 152.53.200.167
+  skip-cert-verify: false
+  sni: jflsjlaf.pages.dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
+- name: 韩国
+  password: trojan
+  port: 8444
+  server: 152.53.60.198
+  skip-cert-verify: false
+  sni: jflsjlaf.pages.dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
+- client-fingerprint: chrome
+  name: 德国
+  port: 9062
   reality-opts:
-    public-key: FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc
-    short-id: deadbeef42
-  server: 202.155.11.73
-  servername: www.apple.com
+    public-key: iKudh9C8JOdP46KuWMCmsz63VgZ76UmFCamMIy71u0s
+    short-id: a5d7b983
+  server: 212.227.7.153
+  servername: cloudflare-ech.com
   tls: true
   type: vless
-  uuid: 4b056394-2f40-11f1-bffe-46c4782ac1a7
+  uuid: 05d244e2-b5f2-4bc7-a81f-46586e432cb2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 日期：04-17
-  port: 1114
-  reality-opts:
-    public-key: WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ
-    short-id: 79a1e14b
-  server: 204.216.216.23
-  servername: yahoo.com
-  tls: true
-  type: vless
-  uuid: 6ba2eac6-0ec9-44ca-a42b-a8e23aafb530
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 免费VPN：https://tt.vg/OWeaF
-  port: 443
-  reality-opts:
-    public-key: BX0Y46bstmUjnwvT8lPyy4ECQXMDF54LnGd5C7IA9EM
-    short-id: 0c1553316a645758
-  server: 95.110.210.161
-  servername: www.booking.com
-  tls: true
-  type: vless
-  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 新加坡 05
-  port: 443
-  reality-opts:
-    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
-    short-id: 9c2378562188c3cb
-  server: 5.199.164.117
-  servername: sg.denditop.site
-  tls: true
-  type: vless
-  uuid: 603e7eca-fe4d-48f8-a4f8-bc832d7d37ce
-- client-fingerprint: chrome
-  name: 香港 20
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.218.214.223
-  servername: www.starwars.com
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  name: 香港 19
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.218.102.24
-  servername: app.usercentrics.eu
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  name: 香港 18
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 47.242.64.181
-  servername: cms.suse.net
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  name: 香港 17
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.218.97.190
-  servername: github.githubassets.com
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  name: 香港 15
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.218.75.173
-  servername: github.githubassets.com
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  name: 香港 13
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.218.104.96
-  servername: images-na.ssl-images-amazon.com
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  name: 香港 12
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.218.96.116
-  servername: wcs.adobe.com
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  name: 香港 10
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.218.127.248
-  servername: j.6sc.co
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  name: 香港 09
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.218.111.123
-  servername: j.6sc.co
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  name: 香港 08
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.218.96.230
-  servername: j.6sc.co
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  name: 香港 07
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.218.208.211
-  servername: api.company-target.com
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  name: 香港 06
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.218.93.148
-  servername: sgtm.jetbrains.com
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  name: 香港 05
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.218.117.76
-  servername: prod.adobeccstatic.com
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  name: 香港 03
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.218.99.8
-  servername: j.6sc.co
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  name: 香港 02
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.218.123.111
-  servername: j.6sc.co
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 土耳其 01
-  port: 443
-  reality-opts:
-    public-key: LaGTRJ1CJnnYV7FnyqQnU28I0xFTPFKI8xmUFwig5ic
-    short-id: c410508e9721512b
-  server: mouse2.1lil1.de
-  servername: www.stackoverflow.com
-  tls: true
-  type: vless
-  uuid: bcc094e4-1a85-8a25-f8e1-5b08b9af841c
-- client-fingerprint: chrome
-  name: 泰国 02
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 47.81.36.237
-  servername: api.digital-help-prd.autodesk.com
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 瑞士 01
-  port: 443
-  reality-opts:
-    public-key: DoZSKLwNQjogQMlE7oEEuB8TqpNa-umXzG-2Q6dTTEY
-    short-id: 4fa44664f6a566d3
-  server: es.milas.click
-  servername: es.milas.click
-  tls: true
-  type: vless
-  uuid: 913c6074-a747-492b-a7e9-5abfcad6369d
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 日本 04
-  port: 19002
-  reality-opts:
-    public-key: bITbm8a-MK3pmsZLIaT75x9YWeilkfhvobJYaRcr6zs
-  server: 45.153.245.222
-  servername: mirrors-package-mc.aki-game.net
-  tls: true
-  type: vless
-  uuid: 9bd35224-a67d-499b-ae1c-ea383132e422
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 美国 28
-  port: 443
-  reality-opts:
-    public-key: VW2WJYWcnHGiZWucpI76sh5nNLOatijTYkFttBleVlE
-    short-id: d8c76f
-  server: 173.211.42.136
-  servername: www.linkedin.com
-  tls: true
-  type: vless
-  uuid: 22863fac-f680-45e9-82c1-e902076631c4
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国 27
-  port: 26432
-  reality-opts:
-    public-key: opy6DExNZ8ikbMcX9l11kyxBOYFb6WmkC6R4nrRirUA
-    short-id: facce7
-  server: desivps.333009.xyz
-  servername: aws.amazon.com
-  tls: true
-  type: vless
-  uuid: 3420808a-9251-4e96-8376-ed505492ae28
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国 26
-  port: 443
-  reality-opts:
-    public-key: P7XdTB-V3VEV_B5Wenifit6OriVM5YUQ8ir-SSqes0U
-    short-id: 7a4f4b55a899ae1d
-  server: 95.164.36.217
-  servername: www.booking.com
-  tls: true
-  type: vless
-  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国 23
-  port: 7443
-  reality-opts:
-    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-    short-id: d82fb387
-  server: 152.53.1.32
-  servername: chat.deepseek.com
-  tls: true
-  type: vless
-  uuid: 8f8380ae-9f5d-4cb5-8f5f-0f70fbe054a9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国 19
-  port: 10001
-  reality-opts:
-    public-key: 4jNz4Bw-FZlaX-WtfAdwK0hegY28W_k8AttGd-7hZn4
-    short-id: fb2c6678
-  server: 156.229.161.107
-  servername: www.icloud.com
-  tls: true
-  type: vless
-  uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
-- client-fingerprint: chrome
-  name: 美国 07
-  port: 34155
-  reality-opts:
-    public-key: cJEl6ku8HSxHdQwbpUColEVQNH7AhFLuPfhwA1_HV2E
-    short-id: 9a4148bf7497faca
-  server: dbp.qzz.io
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 39b4f628-3e78-40c3-ac6b-a25db7fd8884
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国 06
-  port: 443
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  server: 152.53.80.40
-  servername: sha.helper-internet.com
-  tls: true
-  type: vless
-  uuid: e6567a1e-260f-4b0e-8de3-e2e12f90e854
-- client-fingerprint: chrome
-  name: 马来西亚 05
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 47.254.230.204
-  servername: app.usercentrics.eu
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 加拿大 01
-  port: 1443
-  reality-opts:
-    public-key: ZIBYUH_qQSeI1T6xImXG6MEZXP2yZW3NqGa8W69Cfyk
-    short-id: dde50f55d81116
-  server: 192.9.162.122
-  servername: swdist.apple.com
-  tls: true
-  type: vless
-  uuid: 7a169e43-ff85-4572-9843-ba7207d07319
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 荷兰 03
-  port: 443
-  reality-opts:
-    public-key: jAdL6F6VaKzvTMpPQ53X58sC_i2QY6Wx2rdjq4Eo3yo
-    short-id: a1b2c3d4e5f67890
-  server: 95.179.150.23
-  servername: www.coolblue.nl
-  tls: true
-  type: vless
-  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-- client-fingerprint: chrome
-  name: 荷兰 02
-  port: 8443
-  server: 195.181.173.199
-  servername: ams1.fromblancwithlove.com
-  tls: true
-  type: vless
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-- client-fingerprint: chrome
-  name: 韩国 02
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 47.80.14.130
-  servername: api.company-target.com
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 海外 01
-  port: 24725
-  reality-opts:
-    public-key: PAAYOscWvc6-DIWjJ8cHWpgX-xkMUVmu8Nz24itmo34
-  server: 139.59.3.70
-  servername: dash.cloudflare.com
-  tls: true
-  type: vless
-  uuid: 48ddd7e3-5d31-46ab-9153-16c0e4d92adc
-- client-fingerprint: chrome
-  name: 菲律宾 01
-  port: 443
-  reality-opts:
-    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
-  server: 8.217.48.65
-  servername: cdn.userway.org
-  tls: true
-  type: vless
-  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: firefox
-  name: 法国 03
-  port: 443
-  reality-opts:
-    public-key: fXdtB8vImCUJMQBLcCNK7p1v3rVzx6HllaDLk8Vc4EU
-    short-id: 239dcd11
-  server: 57.128.81.193
-  servername: www.samsung.com
-  tls: true
-  type: vless
-  uuid: 53821f3c-5b03-456a-89f3-f8379f130752
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 法国 01
-  port: 443
-  reality-opts:
-    public-key: _xzl59bcUYD9QUSKFyboqCC_9eUnaXUUKWA19oQWFHU
-    short-id: 8d17b7ebab7b99d7
-  server: 51.68.155.153
-  servername: www.allegro.pl
-  tls: true
-  type: vless
-  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 德国 02
+  name: 德国_1
   port: 9443
   reality-opts:
     public-key: wAYsJ6RJXFy94w_WaTIhp1ZfCePAPoZmP27RarvUqXg
@@ -446,283 +143,71 @@ proxies:
   type: vless
   uuid: 4649d681-7f26-4959-a3f2-02eb8866230f
 - client-fingerprint: chrome
-  name: 新加坡
-  port: 38401
-  reality-opts:
-    public-key: GLEycjhrC8iI-GPnDYGA-7-OPMnBHfYZXAFNR5AiO0g
-    short-id: de85010f
-  server: sg.ehdajgakg.org
-  servername: www.apple.com
-  tls: true
-  type: vless
-  uuid: edaf2183-9d5b-49be-862d-b016f173b674
-- client-fingerprint: chrome
-  name: 香港
-  port: 38101
-  reality-opts:
-    public-key: ASWxV35f8Z-_8WxATpzs8pKsnYAVCpaOj86pmW43dGA
-    short-id: 0b395268
-  server: hk.ehdajgakg.org
-  servername: www.apple.com
-  tls: true
-  type: vless
-  uuid: edaf2183-9d5b-49be-862d-b016f173b674
-- client-fingerprint: chrome
-  name: 美国
-  port: 38501
-  reality-opts:
-    public-key: nG6SOKl3_MEHKR0_xrJ2pQ0_v6enTCrGs_7btb3Xano
-    short-id: a6c3f0bf
-  server: us.ehdajgakg.org
-  servername: www.apple.com
-  tls: true
-  type: vless
-  uuid: edaf2183-9d5b-49be-862d-b016f173b674
-- client-fingerprint: chrome
-  name: 法国
-  port: 38601
-  reality-opts:
-    public-key: wM72yOyGk1OAcETR3qdDzgSMxXIKLjqzLzXgPXoEV0Y
-    short-id: c326a95b
-  server: fr.ehdajgakg.org
-  servername: www.apple.com
-  tls: true
-  type: vless
-  uuid: edaf2183-9d5b-49be-862d-b016f173b674
-- alterId: 0
-  cipher: auto
-  name: 德国
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: 香港1
-  password: 8b95cc43-3ae5-4920-bef9-da3a072c4b34
-  port: 10184
-  server: hk1.8989111.xyz
-  skip-cert-verify: false
-  tls: true
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 德国_1
-  port: 180
-  server: 82.198.246.46
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- client-fingerprint: chrome
-  name: 英国 04
-  network: ws
-  port: 8443
-  server: 57.129.137.87
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
-  name: 英国 03
+  name: 香港_1
   network: ws
   port: 443
-  server: 160.153.1.198
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
-  name: 英国 01
-  network: ws
-  port: 443
-  server: 178.62.67.149
-  servername: 3-2ll.pages.dev
-  tls: true
-  type: vless
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  ws-opts:
-    headers:
-      Host: 3-2ll.pages.dev
-    path: /
-- client-fingerprint: chrome
-  name: 意大利 05
-  network: ws
-  port: 7443
-  server: 222.167.202.3
-  servername: 2026.hhhhh.eu.org
-  tls: true
-  type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  ws-opts:
-    headers:
-      Host: 2026.hhhhh.eu.org
-    path: /222.167.202.3:7443
-- client-fingerprint: chrome
-  name: 意大利 03
-  network: ws
-  port: 7443
-  server: 222.167.202.35
-  servername: 2026.hhhhh.eu.org
-  tls: true
-  type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  ws-opts:
-    headers:
-      Host: 2026.hhhhh.eu.org
-    path: /222.167.202.35:7443
-- client-fingerprint: chrome
-  name: 意大利 01
-  network: ws
-  port: 443
-  server: 89.150.40.152
-  servername: 3-7ny.pages.dev
-  tls: true
-  type: vless
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  ws-opts:
-    headers:
-      Host: 3-7ny.pages.dev
-    path: /
-- client-fingerprint: chrome
-  name: 新加坡 06
-  network: ws
-  port: 36690
-  server: 129.226.144.204
-  tls: false
-  type: vless
-  uuid: 3047ba53-6f5d-4807-8bd1-135c9d031327
-  ws-opts:
-    headers:
-      Host: 129.226.144.204
-    path: /3047ba53
-- client-fingerprint: chrome
-  name: 新加坡 04
-  network: ws
-  port: 8443
-  server: 198.41.209.193
-  servername: wr.ssdxz.cn
-  tls: true
-  type: vless
-  uuid: 29ff2954-dfea-4d20-8089-059cfa861453
-  ws-opts:
-    headers:
-      Host: wr.ssdxz.cn
-    path: /
-- client-fingerprint: chrome
-  name: 新加坡 03
-  network: ws
-  port: 443
-  server: serviceshub.samsclub.com
-  servername: we.ssdxz.cn
-  tls: true
-  type: vless
-  uuid: 29ff2954-dfea-4d20-8089-059cfa861453
-  ws-opts:
-    headers:
-      Host: we.ssdxz.cn
-    path: /
-- client-fingerprint: chrome
-  name: 新加坡 02
-  network: ws
-  port: 443
-  server: 188.239.9.91
-  servername: 1-axj.pages.dev
-  tls: true
-  type: vless
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  ws-opts:
-    headers:
-      Host: 1-axj.pages.dev
-    path: /
-- client-fingerprint: chrome
-  name: 新加坡 01
-  network: ws
-  port: 443
-  server: falankefu1.zqjsqapi.com
-  servername: falankefu1.zqjsqapi.com
+  server: xianggang3.zqjsqapi.com
+  servername: xianggang3.zqjsqapi.com
   tls: true
   type: vless
   uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
   ws-opts:
     headers:
-      Host: falankefu1.zqjsqapi.com
+      Host: xianggang3.zqjsqapi.com
     path: /proxy
 - client-fingerprint: chrome
-  name: 香港 16
+  name: 香港_2
   network: ws
-  port: 7443
-  server: 222.167.202.36
-  servername: 2026.hhhhh.eu.org
+  port: 443
+  server: 143.14.189.132
+  servername: sn1.skylee5.cloudns.ch
   tls: true
   type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
   ws-opts:
     headers:
-      Host: 2026.hhhhh.eu.org
-    path: /222.167.202.36:7443
+      Host: sn1.skylee5.cloudns.ch
+    path: /
 - client-fingerprint: chrome
-  name: 香港 14
+  name: 香港_3
   network: ws
-  port: 6235
-  server: 103.180.20.84
-  servername: baidu.com
+  port: 443
+  server: 219.76.13.169
+  servername: sn1.skylee5.cloudns.ch
   tls: true
   type: vless
-  uuid: f6ddddaf-dfd6-4134-9dae-03b93b03d193
+  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
   ws-opts:
     headers:
-      Host: baidu.com
-    path: /xxxxhttp
+      Host: sn1.skylee5.cloudns.ch
+    path: /
 - client-fingerprint: chrome
-  name: 香港 11
+  name: 德国_2
   network: ws
-  port: 7443
-  server: 222.167.202.45
-  servername: 2026.hhhhh.eu.org
+  port: 443
+  server: 77.37.33.41
+  servername: edtunnel-eiz.pages.dev
   tls: true
   type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  uuid: 42add63b-deda-4e71-aa48-ddd288181858
   ws-opts:
     headers:
-      Host: 2026.hhhhh.eu.org
-    path: /222.167.202.45:7443
+      Host: edtunnel-eiz.pages.dev
+    path: /
 - client-fingerprint: chrome
-  name: 香港 04
+  name: 新加坡
   network: ws
-  port: 6235
-  server: 207.174.133.117
-  servername: baidu.com
+  port: 2053
+  server: blog.646474.xyz
+  servername: qgljeuqx.stream-node-us.sh21.eu.org
   tls: true
   type: vless
-  uuid: f6ddddaf-dfd6-4134-9dae-03b93b03d142
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
   ws-opts:
     headers:
-      Host: baidu.com
-    path: /xxxxhttp
-- client-fingerprint: chrome
-  name: 香港 01
-  network: ws
-  port: 7443
-  server: 222.167.202.52
-  servername: 2026.hhhhh.eu.org
-  tls: true
-  type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  ws-opts:
-    headers:
-      Host: 2026.hhhhh.eu.org
-    path: /222.167.202.52:7443
-- client-fingerprint: chrome
-  name: 泰国 01
+      Host: qgljeuqx.stream-node-us.sh21.eu.org
+    path: /
+- name: 美国_10
   network: ws
   port: 443
   server: mangu1.zqjsqapi.com
@@ -734,215 +219,41 @@ proxies:
     headers:
       Host: mangu1.zqjsqapi.com
     path: /proxy
-- client-fingerprint: chrome
-  name: 台湾 01
-  network: ws
-  port: 6235
-  server: 125.227.219.98
-  servername: baidu.com
-  tls: true
-  type: vless
-  uuid: f6ddddaf-dfd6-4134-9dae-03b93b03d146
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /xxxxhttp
-- client-fingerprint: chrome
-  name: 日本 01
+- name: 美国_11
   network: ws
   port: 443
-  server: 202.144.192.37
-  servername: ewgruiehoe.pages.dev
-  tls: true
-  type: vless
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  ws-opts:
-    headers:
-      Host: ewgruiehoe.pages.dev
-    path: /
-- client-fingerprint: chrome
-  name: 南非 01
-  network: ws
-  port: 443
-  server: 139.84.235.99
-  servername: 1-aym.pages.dev
-  tls: true
-  type: vless
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  ws-opts:
-    headers:
-      Host: 1-aym.pages.dev
-    path: /
-- client-fingerprint: chrome
-  name: 美国 25
-  network: ws
-  port: 8443
-  server: 185.135.86.217
-  servername: sni.111000.v6.navy
+  server: 77.232.140.43
+  servername: sni.111000.cc.cd
   tls: true
   type: vless
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: sni.111000.v6.navy
+      Host: sni.111000.cc.cd
     path: /
-- client-fingerprint: chrome
-  name: 美国 24
-  network: ws
-  port: 8443
-  server: 57.128.177.176
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /?telegram
-- client-fingerprint: chrome
-  name: 美国 22
+- name: 美国_12
   network: ws
   port: 443
-  server: 94.131.101.135
-  servername: sni.111000.v6.navy
+  server: dongjing3.zqjsqapi.com
+  servername: dongjing3.zqjsqapi.com
   tls: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
   ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
-  name: 美国 21
+    path: /proxy
+- name: 美国_13
   network: ws
-  port: 52573
-  server: 154.64.238.106
-  tls: false
-  type: vless
-  uuid: 47875ae5-09bb-4d6c-c212-4ced5fa8d1ee
-  ws-opts:
-    headers:
-      Host: 154.64.238.106
-    path: /
-- client-fingerprint: chrome
-  name: 美国 20
-  network: ws
-  port: 443
-  server: 217.163.76.254
-  servername: sni.111000.v6.navy
+  port: 2087
+  server: 162.159.44.100
+  servername: fu.baiproxy.us.ci
   tls: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
   ws-opts:
     headers:
-      Host: sni.111000.v6.navy
+      Host: fu.baiproxy.us.ci
     path: /
-- client-fingerprint: chrome
-  name: 美国 18
-  network: ws
-  port: 443
-  server: 135.84.73.42
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
-  name: 美国 17
-  network: ws
-  port: 443
-  server: etl2.pages.dev
-  servername: etl2.pages.dev
-  tls: true
-  type: vless
-  uuid: 88d92d15-bfdb-47e7-8bdb-bfbef904a4d4
-  ws-opts:
-    headers:
-      Host: etl2.pages.dev
-    path: /
-- client-fingerprint: chrome
-  name: 美国 16
-  network: ws
-  port: 443
-  server: 135.84.74.155
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
-  name: 美国 15
-  network: ws
-  port: 443
-  server: 192.200.160.19
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
-  name: 美国 14
-  network: ws
-  port: 443
-  server: 135.84.74.43
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
-  name: 美国 13
-  network: ws
-  port: 2096
-  server: 45.12.30.138
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: /
-- client-fingerprint: chrome
-  name: 美国 12
-  network: ws
-  port: 2053
-  server: 188.241.241.123
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: /
-- client-fingerprint: chrome
-  name: 美国 08
-  network: ws
-  port: 443
-  server: 104.18.12.149
-  servername: vipnet16ss.alireza031.shop
-  tls: true
-  type: vless
-  uuid: 92bc8d2b-8253-4467-8ebb-be6c99851ecd
-  ws-opts:
-    headers:
-      Host: vipnet16ss.alireza031.shop
-    path: /
-- client-fingerprint: chrome
-  name: 美国 05
+- name: 美国_14
   network: ws
   port: 443
   server: ip.sb
@@ -954,34 +265,298 @@ proxies:
     headers:
       Host: 3-9sp.pages.dev
     path: /
-- client-fingerprint: chrome
-  name: 美国 04
+- name: 新加坡_1
   network: ws
   port: 443
-  server: 18.245.54.3
-  servername: d23iuljn5k9z1j.cloudfront.net
+  server: falankefu1.zqjsqapi.com
   tls: true
   type: vless
-  uuid: 97b2cd5b-b98d-494f-8f97-3a06e8c1bbd2
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
   ws-opts:
     headers:
-      Host: d23iuljn5k9z1j.cloudfront.net
-    path: /
-- client-fingerprint: chrome
-  name: 美国 03
+      Host: falankefu1.zqjsqapi.com
+    path: /proxy
+- name: 美国_15
   network: ws
   port: 443
-  server: store.ubi.com
-  servername: 3-2h8.pages.dev
+  server: 43.160.204.190
+  servername: xinjiapo1.zqjsqapi.com
+  tls: true
+  type: vless
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  ws-opts:
+    path: /proxy
+- name: 美国_16
+  network: ws
+  port: 443
+  server: 185.170.166.40
+  servername: edtunnel-eiz.pages.dev
+  tls: true
+  type: vless
+  uuid: 42add63b-deda-4e71-aa48-ddd288181858
+  ws-opts:
+    headers:
+      Host: edtunnel-eiz.pages.dev
+    path: /
+- name: 美国_17
+  network: ws
+  port: 443
+  server: 130.162.132.38
+  servername: edtunnel-eiz.pages.dev
+  tls: true
+  type: vless
+  uuid: 42add63b-deda-4e71-aa48-ddd288181858
+  ws-opts:
+    headers:
+      Host: edtunnel-eiz.pages.dev
+    path: /
+- name: 美国_18
+  network: ws
+  port: 13720
+  server: 118.41.35.191
+  servername: s3vz.user-service.chinav.indevs.in
+  tls: true
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: s3vz.user-service.chinav.indevs.in
+    path: /danfeng
+- name: 美国_19
+  network: ws
+  port: 443
+  server: dongjing1.zqjsqapi.com
+  servername: dongjing1.zqjsqapi.com
+  tls: true
+  type: vless
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  ws-opts:
+    headers:
+      Host: dongjing1.zqjsqapi.com
+    path: /proxy
+- name: 新加坡_2
+  network: ws
+  port: 443
+  server: xinjiapo1.zqjsqapi.com
+  servername: xinjiapo1.zqjsqapi.com
+  tls: true
+  type: vless
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  ws-opts:
+    headers:
+      Host: xinjiapo1.zqjsqapi.com
+    path: /proxy
+- name: 美国_20
+  network: ws
+  port: 443
+  server: dongjing2.zqjsqapi.com
+  servername: dongjing2.zqjsqapi.com
+  tls: true
+  type: vless
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  ws-opts:
+    path: /proxy
+- name: 美国_22
+  network: ws
+  port: 80
+  server: cdn.tzpro.xyz
+  tls: false
+  type: vless
+  uuid: 5aa7d17e-7dc2-46dd-9acf-c3c97440259b
+  ws-opts:
+    headers:
+      Host: sss.yaml7.ggff.net
+    path: /
+- name: 美国_23
+  network: ws
+  port: 443
+  server: 43.165.174.229
+  servername: dongjing1.zqjsqapi.com
+  tls: true
+  type: vless
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  ws-opts:
+    path: /proxy
+- name: 美国_26
+  network: ws
+  port: 443
+  server: cnamefuckxxs.yuchen.icu
+  servername: sss.yaml7.ggff.net
+  tls: true
+  type: vless
+  uuid: 5aa7d17e-7dc2-46dd-9acf-c3c97440259b
+  ws-opts:
+    headers:
+      Host: sss.yaml7.ggff.net
+    path: /
+- name: 美国_29
+  network: ws
+  port: 20202
+  server: 61.85.6.38
+  servername: s3vz.user-service.chinav.indevs.in
+  tls: true
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: s3vz.user-service.chinav.indevs.in
+    path: /danfeng
+- name: 美国_30
+  network: ws
+  port: 443
+  server: 195.133.44.199
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: /
+- name: 德国_3
+  network: ws
+  port: 443
+  server: 89.150.40.152
+  servername: 3-7ny.pages.dev
   tls: true
   type: vless
   uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
   ws-opts:
     headers:
-      Host: 3-2h8.pages.dev
+      Host: 3-7ny.pages.dev
     path: /
-- client-fingerprint: chrome
-  name: 美国 02
+- name: 美国_36
+  network: ws
+  port: 443
+  server: 192.200.160.41
+  servername: edtunnel-eiz.pages.dev
+  tls: true
+  type: vless
+  uuid: 42add63b-deda-4e71-aa48-ddd288181858
+  ws-opts:
+    headers:
+      Host: edtunnel-eiz.pages.dev
+    path: /
+- name: 香港_4
+  network: ws
+  port: 2087
+  server: 162.159.39.157
+  servername: 1.proxy2.us.ci
+  tls: true
+  type: vless
+  uuid: 4859c235-2530-4062-9a0b-ea859cbbf861
+  ws-opts:
+    headers:
+      Host: 1.proxy2.us.ci
+    path: /
+- name: 美国_37
+  network: ws
+  port: 443
+  server: 162.159.44.198
+  servername: fu.baiproxy.us.ci
+  tls: true
+  type: vless
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: fu.baiproxy.us.ci
+    path: /
+- name: 美国_38
+  network: ws
+  port: 443
+  server: 74.49.214.43
+  servername: sni.111000.cc.cd
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.cc.cd
+    path: /
+- name: 美国_39
+  network: ws
+  port: 2053
+  server: 162.159.45.175
+  servername: fu.baiproxy.us.ci
+  tls: true
+  type: vless
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: fu.baiproxy.us.ci
+    path: /
+- name: 美国_40
+  network: ws
+  port: 2053
+  server: 162.159.44.66
+  servername: fu.baiproxy.us.ci
+  tls: true
+  type: vless
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: fu.baiproxy.us.ci
+    path: /
+- name: 德国_4
+  network: ws
+  port: 80
+  server: 104.17.15.87
+  tls: false
+  type: vless
+  uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
+  ws-opts:
+    headers:
+      Host: britain.xydcqd.workers.dev
+    path: /@WireXnet
+- name: 美国_41
+  network: ws
+  port: 443
+  server: 140.238.51.35
+  servername: edtunnel-eiz.pages.dev
+  tls: true
+  type: vless
+  uuid: 42add63b-deda-4e71-aa48-ddd288181858
+  ws-opts:
+    headers:
+      Host: edtunnel-eiz.pages.dev
+    path: /
+- name: 美国_43
+  network: ws
+  port: 2053
+  server: 188.241.241.32
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: /
+- name: 美国_44
+  network: ws
+  port: 443
+  server: 37.0.6.40
+  servername: edtunnel-eiz.pages.dev
+  tls: true
+  type: vless
+  uuid: 42add63b-deda-4e71-aa48-ddd288181858
+  ws-opts:
+    headers:
+      Host: edtunnel-eiz.pages.dev
+    path: /
+- name: 韩国_1
+  network: ws
+  port: 443
+  server: 135.84.74.155
+  servername: sni.111000.v6.navy
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: /
+- name: 韩国_2
   network: ws
   port: 443
   server: 209.102.207.120
@@ -993,304 +568,74 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: /
-- client-fingerprint: chrome
-  name: 美国 01
+- name: 美国_46
   network: ws
   port: 443
-  server: love.zshabai.top
-  servername: gsgsdgreyrehjsrteargsfhtrhsrwrhtruiekghmg.pages.dev
+  server: 18.245.54.3
+  servername: d23iuljn5k9z1j.cloudfront.net
   tls: true
   type: vless
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  uuid: 97b2cd5b-b98d-494f-8f97-3a06e8c1bbd2
   ws-opts:
     headers:
-      Host: gsgsdgreyrehjsrteargsfhtrhsrwrhtruiekghmg.pages.dev
-    path: /
-- client-fingerprint: chrome
-  name: 加拿大 05
-  network: ws
-  port: 443
-  server: 103.97.88.133
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
-  name: 加拿大 04
-  network: ws
-  port: 8443
-  server: 91.84.101.164
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
-  name: 加拿大 03
-  network: ws
-  port: 443
-  server: 160.153.1.122
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
-  name: 加拿大 02
-  network: ws
-  port: 443
-  server: 199.34.228.41
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
-  name: 荷兰 05
-  network: ws
-  port: 2053
-  server: 185.198.167.93
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
-  name: 荷兰 04
-  network: ws
-  port: 2053
-  server: 212.34.144.154
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
-  name: 荷兰 01
-  network: ws
-  port: 443
-  server: 185.36.140.105
-  servername: 3-7ny.pages.dev
-  tls: true
-  type: vless
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  ws-opts:
-    headers:
-      Host: 3-7ny.pages.dev
-    path: /
-- client-fingerprint: chrome
-  name: 韩国 01
-  network: ws
-  port: 2096
-  server: 104.17.128.1
-  servername: azadnet-1ml.pages.dev
-  tls: true
-  type: vless
-  uuid: d0298536-d670-4045-bbb1-ddd5ea68683e
-  ws-opts:
-    headers:
-      Host: azadnet-1ml.pages.dev
-    path: /azadnet-1ml.pages.dev/
-- client-fingerprint: chrome
-  name: 海外 05
-  network: ws
-  port: 443
-  server: freeyx.cloudflare88.eu.org
-  servername: do-sfo3.862400.xyz
-  tls: true
-  type: vless
-  uuid: 9c4af1f5-34d2-409f-b449-2b0c4f66b74f
-  ws-opts:
-    headers:
-      Host: do-sfo3.862400.xyz
-    path: /
-- client-fingerprint: chrome
-  name: 海外 04
-  network: ws
-  port: 8443
-  server: 158.220.88.180
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: /
-- client-fingerprint: chrome
-  name: 海外 03
-  network: ws
-  port: 8443
-  server: 167.88.160.144
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: /
-- client-fingerprint: chrome
-  name: 海外 02
-  network: ws
-  port: 2096
-  server: 104.18.32.47
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: /?ed
-- client-fingerprint: chrome
-  name: 法国 05
-  network: ws
-  port: 2053
-  server: 217.60.252.232
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
-  name: 法国 04
-  network: ws
-  port: 8443
-  server: 57.128.183.225
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /?telegram
-- client-fingerprint: chrome
-  name: 俄罗斯 01
-  network: ws
-  port: 443
-  server: 94.242.51.174
-  tls: false
-  type: vless
-  uuid: 3ddce082-7e03-429c-8af8-9a873d23f0ba
-  ws-opts:
-    headers:
-      Host: 94.242.51.174
-    path: /
-- client-fingerprint: chrome
-  name: 德国 05
-  network: ws
-  port: 8443
-  server: 51.91.100.159
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
-  name: 德国 04
-  network: ws
-  port: 2053
-  server: 82.117.245.166
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: /
-- client-fingerprint: chrome
-  name: 德国 03
-  network: ws
-  port: 2053
-  server: 82.117.245.125
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /
-- client-fingerprint: chrome
-  name: 波兰 01
-  network: ws
-  port: 443
-  server: 92.118.205.66
-  servername: 3-7gj.pages.dev
-  tls: true
-  type: vless
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  ws-opts:
-    headers:
-      Host: 3-7gj.pages.dev
-    path: /
-- client-fingerprint: chrome
-  name: 冰岛 01
-  network: ws
-  port: 443
-  server: 212.192.214.215
-  servername: 3-93f.pages.dev
-  tls: true
-  type: vless
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  ws-opts:
-    headers:
-      Host: 3-93f.pages.dev
-    path: /
-- client-fingerprint: chrome
-  name: 阿联酋 01
-  network: ws
-  port: 443
-  server: 144.172.88.117
-  servername: 177-e06.pages.dev
-  tls: true
-  type: vless
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  ws-opts:
-    headers:
-      Host: 177-e06.pages.dev
-    path: /
-- name: 美国_1
-  password: trojan
-  port: 8444
-  server: 152.53.60.198
-  skip-cert-verify: false
-  sni: jflsjlaf.pages.dev
-  tls: true
-  type: trojan
-  ws-opts:
+      Host: d23iuljn5k9z1j.cloudfront.net
     path: /
 - alterId: 0
   cipher: auto
-  name: 美国_2
+  name: 德国_5
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 德国_6
+  port: 180
+  server: 82.198.246.46
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 德国_8
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 美国_47
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+- alterId: 0
+  cipher: auto
+  name: 美国_54
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::11
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-opts:
+    headers:
+      Host: TABRIZ.NET
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 美国_56
   network: ws
   port: 44579
   server: 2001:bc8:32d7:302::17
@@ -1304,49 +649,7 @@ proxies:
     path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
 - alterId: 0
   cipher: auto
-  name: 美国_3
-  network: ws
-  port: 44579
-  server: 2001:bc8:32d7:302::10
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  ws-opts:
-    headers:
-      Host: AZERB.NET
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 美国_7
-  network: ws
-  port: 44579
-  server: 2001:bc8:32d7:302::15
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  ws-opts:
-    headers:
-      Host: TURK.NET
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-- alterId: 0
-  cipher: auto
-  name: 美国_9
-  network: ws
-  port: 44579
-  server: 2001:bc8:32d7:302::11
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  ws-opts:
-    headers:
-      Host: Azerb.NET
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 美国_15
+  name: 美国_62
   network: ws
   port: 44579
   server: 2001:bc8:32d7:302::14
@@ -1360,7 +663,7 @@ proxies:
     path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
 - alterId: 0
   cipher: auto
-  name: 美国_16
+  name: 美国_64
   network: ws
   port: 44579
   server: 2001:bc8:32d7:302::16
@@ -1372,913 +675,17 @@ proxies:
     headers:
       Host: AZERB.NET
     path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-- client-fingerprint: chrome
-  name: ' 美国 30'
-  network: ws
-  port: 443
-  server: 69.63.193.113
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 29'
-  network: ws
-  port: 443
-  server: 154.17.225.73
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 28'
-  network: ws
-  port: 8443
-  server: 154.21.92.36
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 27'
-  network: ws
-  port: 2053
-  server: 154.17.4.159
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 26'
-  network: ws
-  port: 443
-  server: 154.21.95.34
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 25'
-  network: ws
-  port: 443
-  server: 154.17.22.207
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 24'
-  network: ws
-  port: 443
-  server: 154.9.227.100
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 23'
-  network: ws
-  port: 8443
-  server: 69.63.221.45
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 21'
-  network: ws
-  port: 8443
-  server: 64.186.225.221
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 18'
-  network: ws
-  port: 8443
-  server: 154.17.15.126
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 17'
-  network: ws
-  port: 8443
-  server: 64.186.242.84
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 16'
-  network: ws
-  port: 443
-  server: 154.17.10.237
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 15'
-  network: ws
-  port: 2053
-  server: 154.17.15.126
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 13'
-  network: ws
-  port: 443
-  server: 69.63.193.2
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 12'
-  network: ws
-  port: 2053
-  server: 64.186.230.135
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 10'
-  network: ws
-  port: 443
-  server: 206.223.84.247
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 08'
-  network: ws
-  port: 8443
-  server: 64.186.242.91
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 06'
-  network: ws
-  port: 8443
-  server: 64.186.235.180
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 05'
-  network: ws
-  port: 8443
-  server: 38.162.115.250
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 04'
-  network: ws
-  port: 8443
-  server: 23.185.168.216
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 03'
-  network: ws
-  port: 8443
-  server: 64.186.253.47
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 02'
-  network: ws
-  port: 8443
-  server: 64.186.240.9
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 美国 01'
-  network: ws
-  port: 443
-  server: 131.143.251.34
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 30'
-  network: ws
-  port: 2053
-  server: 91.192.81.154
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 29'
-  network: ws
-  port: 443
-  server: 43.134.87.15
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 27'
-  network: ws
-  port: 443
-  server: 124.156.202.172
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 26'
-  network: ws
-  port: 443
-  server: 43.163.109.39
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 25'
-  network: ws
-  port: 443
-  server: 194.87.10.241
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 24'
-  network: ws
-  port: 443
-  server: 43.156.116.194
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 23'
-  network: ws
-  port: 443
-  server: 104.43.91.69
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 22'
-  network: ws
-  port: 8443
-  server: 38.180.9.18
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 21'
-  network: ws
-  port: 443
-  server: 18.143.179.83
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 20'
-  network: ws
-  port: 443
-  server: 18.140.179.70
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 19'
-  network: ws
-  port: 443
-  server: 172.236.154.50
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 18'
-  network: ws
-  port: 443
-  server: 52.77.114.70
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 17'
-  network: ws
-  port: 2053
-  server: 38.180.9.18
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 16'
-  network: ws
-  port: 8443
-  server: 8.219.154.217
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 15'
-  network: ws
-  port: 443
-  server: 43.160.251.110
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 14'
-  network: ws
-  port: 443
-  server: 18.138.34.221
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 12'
-  network: ws
-  port: 443
-  server: 172.104.191.150
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 11'
-  network: ws
-  port: 443
-  server: 43.163.76.248
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 08'
-  network: ws
-  port: 443
-  server: 43.160.195.223
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 07'
-  network: ws
-  port: 8443
-  server: 172.104.186.18
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 03'
-  network: ws
-  port: 443
-  server: 172.104.186.30
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 02'
-  network: ws
-  port: 443
-  server: 13.251.157.143
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 新加坡 01'
-  network: ws
-  port: 443
-  server: 143.42.66.91
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 30'
-  network: ws
-  port: 443
-  server: 219.76.13.167
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 29'
-  network: ws
-  port: 443
-  server: 219.76.13.169
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 28'
-  network: ws
-  port: 8443
-  server: 103.116.247.89
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 26'
-  network: ws
-  port: 443
-  server: 38.147.187.14
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 25'
-  network: ws
-  port: 443
-  server: 47.57.182.141
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 23'
-  network: ws
-  port: 443
-  server: 219.76.13.183
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 22'
-  network: ws
-  port: 443
-  server: 8.217.180.234
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 21'
-  network: ws
-  port: 443
-  server: 8.218.118.182
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 20'
-  network: ws
-  port: 443
-  server: 103.74.192.228
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 19'
-  network: ws
-  port: 8443
-  server: 103.118.42.99
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 18'
-  network: ws
-  port: 443
-  server: 219.76.13.166
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 17'
-  network: ws
-  port: 443
-  server: 159.138.138.87
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 16'
-  network: ws
-  port: 443
-  server: 219.76.13.177
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 15'
-  network: ws
-  port: 443
-  server: 154.16.10.4
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 13'
-  network: ws
-  port: 443
-  server: 43.168.16.112
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 12'
-  network: ws
-  port: 443
-  server: 8.218.226.31
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 11'
-  network: ws
-  port: 443
-  server: 143.14.189.132
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 10'
-  network: ws
-  port: 443
-  server: 219.76.13.180
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 09'
-  network: ws
-  port: 443
-  server: 103.192.179.132
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 07'
-  network: ws
-  port: 8443
-  server: 216.23.92.145
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 06'
-  network: ws
-  port: 8443
-  server: 38.207.161.200
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 04'
-  network: ws
-  port: 8443
-  server: 38.55.193.35
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 03'
-  network: ws
-  port: 8443
-  server: 149.104.6.78
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
-- client-fingerprint: chrome
-  name: ' 香港 01'
-  network: ws
-  port: 443
-  server: 47.76.218.163
-  servername: sn1.skylee5.cloudns.ch
-  tls: true
-  type: vless
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  ws-opts:
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国_65
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::15
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-opts:
+    headers:
+      Host: TURK.NET
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
