@@ -1,39 +1,68 @@
 proxies:
 - client-fingerprint: edge
+  flow: xtls-rprx-vision
   name: 每天更新，请加电报群防止失联
-  port: 22231
-  server: r1.mizulina.top
-  servername: r1.mizulina.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 日期：06-05
-  port: 22231
-  server: 85.234.114.53
-  servername: r1.mizulina.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 🇺🇸 美国US
   port: 443
-  server: 85.234.114.53
-  servername: r1.mizulina.top
+  reality-opts:
+    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
+    short-id: 7a3f9e2b1c8d4f6a
+  server: 31.76.91.9
+  servername: jp.s3-cloud.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 电报群：https://t.me/vvkj11
+  port: 443
+  reality-opts:
+    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
+    short-id: 7a3f9e2b1c8d4f6a
+  server: 31.76.91.14
+  servername: jp.s3-cloud.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
 - alterId: 0
   cipher: auto
-  name: 🇺🇸_US_美国
+  name: 日期：06-06
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- flow: xtls-rprx-vision
+  name: 免费VPN：https://tt.vg/OWeaF
+  port: 22231
+  server: r1.mizulina.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 阿联酋-2001
+  port: 443
+  reality-opts:
+    public-key: gXc2c9NIWxhUTb7HoBCjvo-uB1L4iQj4TH38g4YhxHE
+    short-id: fcd9787f
+  server: 78.17.147.65
+  servername: www.microsoft.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b67ed271-5a34-4d07-9970-f8ba27ca2c8a
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸美国US-67
   port: 180
   server: 82.198.246.214
   skip-cert-verify: true
@@ -41,41 +70,124 @@ proxies:
   type: vmess
   udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 英国_1
-  port: 180
-  server: 82.198.246.37
+- name: 瑞士-2001
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45553
+  server: 155.117.198.87
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: ch.01.naiun.bilibili.com
+  tls: true
+  type: trojan
   udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: 香港-2001
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 47909
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: is.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
+- name: 香港-2002
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45553
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: ch.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚
+  port: 22231
+  server: 85.234.114.53
+  servername: r1.mizulina.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸美国 43
+  port: 443
+  server: 85.234.114.53
+  servername: r1.mizulina.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- name: 冰岛-2001
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 47909
+  server: 155.117.198.87
+  skip-cert-verify: true
+  sni: is.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇬🇧英国 03
+  name: 美国-2003
+  port: 34754
+  reality-opts:
+    public-key: eMijZKuJlNEciXbhyzdbewk-ot_JLMZVaA42bxKFcBM
+    short-id: c9eb0359fac0c345
+  server: transparency.cloud-fr.appcore.org
+  servername: yahoo.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 35762c02-ff2b-4526-b41b-e96e5d99528b
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 英国-2002
   port: 443
   reality-opts:
-    public-key: QsjSJxjG0T6XmoBhjXUohrMNGDQ97J14LVGnJRgUqVk
-    short-id: d3
-  server: 212.74.39.81
-  servername: icloud.com
+    public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
+    short-id: 7a3f9e2b1c8d4f6a
+  server: 31.76.113.25
+  servername: it.s3-cloud.xyz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 568bcfb3-965b-4d97-af29-155b7b9d89c4
-- client-fingerprint: qq
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇩🇪_DE_德国
+  name: 英国-2011
   port: 443
-  server: 87.120.126.205
-  servername: sub.sbrf-cdn342.ru
+  reality-opts:
+    public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
+    short-id: 7a3f9e2b1c8d4f6a
+  server: 31.76.113.51
+  servername: it.s3-cloud.xyz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 91e120bc-159a-4390-b4e1-197b19602ea0
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+- name: 美国-2001_1
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 46424
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: de.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
+- name: 法国-2001
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45619
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: fr.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   name: 🇹🇭泰国 03
   port: 443
@@ -88,208 +200,18 @@ proxies:
   type: vless
   udp: true
   uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇫🇷 法国
-  port: 443
-  reality-opts:
-    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-    short-id: 175d
-  server: hk01-vlr01.tcp-reset-club.net
-  servername: hls-svod.itunes.apple.com
+- name: 德国-2001
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 46424
+  server: 155.117.198.86
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: c1dca28f-48a9-45b9-9c1b-e0b78707a26a
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国_5
-  port: 443
-  reality-opts:
-    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
-    short-id: 7a3f9e2b1c8d4f6a
-  server: jp.s3-cloud.org
-  servername: jp.s3-cloud.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 美国_6
-  port: 443
-  reality-opts:
-    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
-    short-id: 7a3f9e2b1c8d4f6a
-  server: 31.76.91.12
-  servername: jp.s3-cloud.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-- client-fingerprint: random
-  name: 美国_7
-  port: 443
-  server: 150.251.158.76
-  servername: s646.okgg.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 10550754-cf62-3d3b-ba6a-50be27a275d7
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 美国_8
-  port: 34754
-  reality-opts:
-    public-key: eMijZKuJlNEciXbhyzdbewk-ot_JLMZVaA42bxKFcBM
-    short-id: c9eb0359fac0c345
-  server: transparency.cloud-fr.appcore.org
-  servername: yahoo.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 35762c02-ff2b-4526-b41b-e96e5d99528b
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国_9
-  port: 35535
-  reality-opts:
-    public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14
-  server: a.cflive.top
-  servername: www.speedtest.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 35939cbe-5d57-4413-f4d0-cc115db0e000
-- name: 俄罗斯_6
-  port: 8443
-  server: cdn9-33.vk-cdnvideo.com
-  servername: cdn9-33.vk-cdnvideo.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- alterId: 0
-  cipher: auto
-  name: 美国_23
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- client-fingerprint: chrome
-  name: 美国_25
-  port: 8443
-  server: cdn7-09.vk-cdnvideo.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
-- name: 美国_51
-  password: gcuCpQfaiVeDBdWG
-  port: 19128
-  server: jpbgp.netvigor.cc
-  skip-cert-verify: true
-  sni: yazhou10.dynu.net
+  sni: de.01.naiun.bilibili.com
   tls: true
   type: trojan
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 美国_52
-  port: 10001
-  reality-opts:
-    public-key: 7qP6YKWx5CJXia1qjQoIcD7FRjUBbioaioioI729D34
-    short-id: 2afe4310
-  server: 50.114.55.14
-  servername: www.icloud.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 美国_54
-  port: 443
-  reality-opts:
-    public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
-    short-id: 7a3f9e2b1c8d4f6a
-  server: it.s3-cloud.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国_55
-  port: 443
-  reality-opts:
-    public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
-    short-id: 7a3f9e2b1c8d4f6a
-  server: 31.76.113.123
-  servername: it.s3-cloud.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 美国_56
-  port: 443
-  reality-opts:
-    public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
-    short-id: 7a3f9e2b1c8d4f6a
-  server: 31.76.113.60
-  servername: it.s3-cloud.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 美国_57
-  port: 443
-  reality-opts:
-    public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
-    short-id: 7a3f9e2b1c8d4f6a
-  server: 31.76.113.20
-  servername: it.s3-cloud.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国_58
-  port: 9443
-  reality-opts:
-    public-key: MbYR2O0XBSeG74gGYpFIofXsILcf5lG2gc36GyURBXQ
-    short-id: 0199436dd359351b
-  server: 144.31.135.162
-  servername: apple.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b54d36d1-43c3-4b8f-a5f8-cf6504db0562
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国_59
+  name: 美国_2
   port: 10444
   reality-opts:
     public-key: praGYag8YPbz_rcd_Pa6Fqsi_IiQtO3e1AosYBcu6h4
@@ -301,9 +223,132 @@ proxies:
   type: vless
   udp: true
   uuid: f4df3096-8568-4c86-83d2-985623035724
+- name: 德国-2002
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 46424
+  server: 155.117.198.83
+  skip-cert-verify: true
+  sni: de.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
+- name: 冰岛-2002
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 47909
+  server: 155.117.198.82
+  skip-cert-verify: true
+  sni: is.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: random
+  name: 美国_3
+  port: 443
+  server: 150.251.158.76
+  servername: s646.okgg.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10550754-cf62-3d3b-ba6a-50be27a275d7
+- name: 🇺🇸_US_美国
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 48697
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: gh.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰_HK_中国香港
+  port: 30807
+  server: v10.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇹🇼_TW_中国台湾->🇸🇬_SG_新加坡
+  password: gcuCpQfaiVeDBdWG
+  port: 19128
+  server: jpbgp.netvigor.cc
+  skip-cert-verify: true
+  sni: yazhou10.dynu.net
+  tls: true
+  type: trojan
+  udp: true
+- name: 🇸🇬_SG_新加坡
+  port: 10032
+  server: 8.219.213.195
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
+- name: 🇺🇸_US_美国->🇦🇿_AZ_阿塞拜疆
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 41943
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: az.01.naiun.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 美国_4
+  port: 443
+  reality-opts:
+    public-key: QVkd5uoSbUA7rHVLtIoJB4iRp4l0zuw0H9qzQBh3lHs
+    short-id: 7a3f9e2b1c8d4f6a
+  server: jp.s3-cloud.org
+  servername: jp.s3-cloud.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
+- client-fingerprint: chrome
+  name: 俄罗斯_6
+  port: 8443
+  server: 89.232.177.114
+  servername: cdn3-87.vk-cdnvideo.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+- client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.nG3V55mC3ymWk7jI7HJBM4ou3sd9-9OlQpe7tsPiD0U
+  name: 美国_40
+  port: 443
+  reality-opts:
+    public-key: DMliziQZIP7k6OYcVSTi6gZ5xqK595sbyrpdzI6CdUs
+    short-id: 70e2107044b9
+  server: 45.136.58.34
+  servername: www.samsung.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a6e72947-cd53-449e-8ae2-11140ea398df
+- name: 美国_42
+  network: ws
+  port: 666
+  server: 78.135.93.239
+  servername: 78.135.93.239
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  ws-opts:
+    path: /proxy
 - alterId: 0
   cipher: auto
-  name: 美国_60
+  name: 美国_43
   network: ws
   port: 24202
   server: 2a02:6ea0:d32f::f8fe:349b
@@ -316,88 +361,60 @@ proxies:
     headers:
       Host: 2a02:6ea0:d32f::f8fe:349b
     path: /github.com/Alvin9999-newpac/fanqiang
-- client-fingerprint: chrome
-  name: 美国_62
+- alterId: 0
+  cipher: auto
+  name: 美国()_5
   network: ws
   port: 443
-  server: store.ubi.com
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  server: renderer-stream-1-411.mirra.now
   skip-cert-verify: true
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 美国_63
-  network: ws
-  port: 443
-  server: staticdelivery.nexusmods.com
-  servername: adv2m5gy-wrhiahph85c.ovtc.qzz.io
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 美国_64
-  network: ws
-  port: 443
-  server: youxuan.cf.090227.xyz
-  servername: rvbtoc55o588ipfx2qieoygyk0hur.saghv.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 美国_65
-  network: ws
-  port: 4443
-  server: 54.178.110.17
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 美国_66
-  network: ws
-  port: 33284
-  server: 8.219.2.255
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 美国_67
-  network: ws
-  port: 35555
-  server: 144.24.64.13
-  servername: rvbtoc55o588ipfx2qieoygyk0hur.saghv.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
   ws-opts:
     headers:
-      Host: rvbtoc55o588ipfx2qieoygyk0hur.saghv.filegear-sg.me
-    path: /@Marisa_kristi
+      Host: renderer-stream-1-411.mirra.now
+    path: /api/v1/gpu-stream/socket
+- name: 美国_44
+  network: ws
+  port: 666
+  server: 43.162.85.247
+  servername: 43.162.85.247
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  ws-opts:
+    path: /proxy
+- name: 美国_45
+  network: ws
+  port: 666
+  server: 43.162.115.192
+  servername: 43.162.115.192
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  ws-opts:
+    path: /proxy
+- name: 美国_46
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  port: 443
+  server: blackshadow.dpdns.org
+  skip-cert-verify: true
+  sni: blackshadow.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: blackshadow.dpdns.org
+    path: /195.123.218.174-443
 - client-fingerprint: chrome
-  name: 美国_70
+  name: 美国_47
   network: ws
   port: 21828
   server: 144.24.66.151
@@ -409,59 +426,34 @@ proxies:
   uuid: 00000000-0000-4000-8000-000000000000
   ws-opts:
     path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 美国_71
+- name: 美国_49
   network: ws
-  port: 30715
-  server: 166.88.167.206
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  port: 2087
+  server: cf.9999669.xyz
+  servername: fgnix832fx.fx6hsv0.ccwu.cc
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   ws-opts:
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 美国_72
-  network: ws
-  port: 20205
-  server: 146.70.20.110
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    path: /@Marisa_kristi
-- client-fingerprint: random
-  name: 美国_73
-  network: ws
-  port: 443
-  server: japan.com
-  servername: misaka.cndyw.ggff.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  ws-opts:
+    headers:
+      Host: fgnix832fx.fx6hsv0.ccwu.cc
     path: /
 - client-fingerprint: chrome
-  name: 美国_74
+  name: 美国_50
   network: ws
   port: 443
-  server: 172.67.174.10
-  servername: blackshadow.dpdns.org
+  server: staticdelivery.nexusmods.com
+  servername: adv2m5gy-wrhiahph85c.ovtc.qzz.io
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  uuid: 00000000-0000-4000-8000-000000000000
   ws-opts:
-    path: /44.209.52.7-443
-- name: 美国_75
+    path: /@Marisa_kristi
+- name: 美国_52
   network: ws
   port: 443
   server: adf.ly
@@ -475,86 +467,23 @@ proxies:
     headers:
       Host: rayan-007.parvin.dpdns.org
     path: /
-- name: 美国_76
-  network: ws
-  port: 8880
-  server: 45.153.7.30
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime11.workers.dev
-    path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
-- client-fingerprint: chrome
-  name: 美国_77
+- client-fingerprint: random
+  name: 美国_53
   network: ws
   port: 443
-  server: 173.245.58.52
-  servername: juzi.qea.ccwu.cc
+  server: japan.com
+  servername: misaka.cndyw.ggff.net
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   ws-opts:
+    headers:
+      Host: misaka.cndyw.ggff.net
     path: /
-- name: 美国_78
-  network: ws
-  port: 8880
-  server: 45.153.7.50
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime11.workers.dev
-    path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
-- name: 美国_79
-  network: ws
-  port: 8880
-  server: 45.153.7.40
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime11.workers.dev
-    path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
-- name: 美国_80
-  network: ws
-  port: 8880
-  server: 89.117.112.40
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime11.workers.dev
-    path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
-- name: 美国_81
-  network: ws
-  port: 8880
-  server: 89.117.112.30
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime11.workers.dev
-    path: /?ed=2560&https://t.me/YouTube@小青科学网🇨🇳
 - client-fingerprint: chrome
-  name: 美国_82
+  name: 美国_54
   network: ws
   port: 443
   server: 141.101.121.196
@@ -565,48 +494,21 @@ proxies:
   udp: true
   uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
   ws-opts:
-    headers:
-      Host: blackshadow.dpdns.org
     path: /44.209.52.7-443
-- client-fingerprint: chrome
-  name: 美国_83
+- name: 美国_56
   network: ws
-  port: 777
-  server: 93.179.99.130
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    path: /@Marisa_kristi
-- name: 美国_84
-  network: ws
-  port: 8880
-  server: 31.185.108.30
+  port: 80
+  server: cf.0sm.com
   skip-cert-verify: true
   tls: false
   type: vless
   udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 93526fcb-8dbf-442e-a656-eb304f1da4ef
   ws-opts:
     headers:
-      Host: vms.lifetime23.workers.dev
-    path: /
-- name: 美国_85
-  network: ws
-  port: 443
-  server: 198.41.219.218
-  servername: zyzzzoao.xn--fiqv8j.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fe273991-0514-4a16-8ec4-b15ae861c000
-  ws-opts:
-    path: /
-- name: 美国_86
+      Host: lucky-voice-d6f3.difat89954-0c6.workers.dev
+    path: /?ed=2048
+- name: 美国_57
   network: ws
   port: 443
   server: 172.67.185.178
@@ -617,36 +519,12 @@ proxies:
   udp: true
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   ws-opts:
-    path: /
-- client-fingerprint: chrome
-  name: 美国_87
-  network: ws
-  port: 443
-  server: mfa.gov.ua
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    path: /@Marisa_kristi
-- name: 美国_88
-  password: bpb-trojan
-  port: 443
-  server: wing2452.nyc.mn
-  skip-cert-verify: true
-  sni: wing2452.nyc.mn
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
     headers:
-      Host: wing2452.nyc.mn
-    path: /tr
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: /
 - alterId: 0
   cipher: auto
-  name: 美国_90
+  name: 美国_58
   network: ws
   port: 80
   server: 172.67.187.219
@@ -659,34 +537,23 @@ proxies:
     headers:
       Host: accklsj.bufu.us.ci
     path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
-- client-fingerprint: chrome
-  name: 美国_91
+- alterId: 0
+  cipher: auto
+  name: 美国_59
   network: ws
-  port: 20742
-  server: 45.32.103.8
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  port: 80
+  server: skk.moe
   skip-cert-verify: true
-  tls: true
-  type: vless
+  tls: false
+  type: vmess
   udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
+  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
   ws-opts:
-    path: /@Marisa_kristi
+    headers:
+      Host: accklsj.bufu.us.ci
+    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
 - client-fingerprint: chrome
-  name: 美国_93
-  network: ws
-  port: 28382
-  server: 138.2.71.48
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 美国_94
+  name: 美国_60
   network: ws
   port: 74
   server: 157.245.159.88
@@ -697,76 +564,10 @@ proxies:
   udp: true
   uuid: 00000000-0000-4000-8000-000000000000
   ws-opts:
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 美国_95
-  network: ws
-  port: 74
-  server: 209.97.170.177
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    path: /@Marisa_kristi
-- alterId: 0
-  cipher: auto
-  name: 荷兰
-  network: ws
-  port: 443
-  server: renderer-stream-1-411.mirra.now
-  servername: renderer-stream-1-411.mirra.now
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-  ws-opts:
     headers:
-      Host: renderer-stream-1-411.mirra.now
-    path: /api/v1/gpu-stream/socket
-- client-fingerprint: chrome
-  name: 美国_96
-  network: ws
-  port: 35130
-  server: 213.179.69.150
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
+      Host: nisav2de2t0ai8p-hd0.misa.cc.cd
     path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 美国_97
-  network: ws
-  port: 15429
-  server: 91.149.203.13
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  name: 美国_98
-  network: ws
-  port: 433
-  server: 91.184.240.106
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    path: /@Marisa_kristi
-- name: 美国_99
+- name: 美国_63
   password: humanity
   port: 443
   server: 172.64.152.23
@@ -778,10 +579,60 @@ proxies:
   ws-opts:
     headers:
       Host: www.creationlong.org
+    path: //assignment
+- name: 美国_66
+  password: humanity
+  port: 443
+  server: 185.18.250.245
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: 美国_67
+  password: humanity
+  port: 443
+  server: 104.16.174.22
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+- name: 美国_68
+  password: humanity
+  port: 443
+  server: 172.67.180.92
+  skip-cert-verify: true
+  sni: www.multiplydose.com
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.multiplydose.com
+    path: /assignment
+- name: 美国_69
+  password: humanity
+  port: 443
+  server: www.calmlunch.com
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
     path: /assignment
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: 美国_101
+  cipher: auto
+  name: 美国_70
   network: ws
   port: 80
   server: speedtest.org
